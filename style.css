@@ -19,7 +19,7 @@ body {
 
 /* 标题样式 */
 h1 {
-    font-family: 'Microsoft YaHei', sans-serif; /* 使用微软雅黑 */
+    font-family: 'FangSong', sans-serif; /* 使用微软雅黑 */
     font-size: 3rem;
     font-weight: 600; /* 加粗 */
     margin: 20px 0;
