@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'ZCOOL Addict Italic'; 
     src: url('站酷仓耳渔阳体-W01.ttf') format('truetype');
@@ -16,12 +15,18 @@ body {
     text-align: center;
 }
 
+/* 标题样式 */
 h1 {
+    font-family: 'Raleway', sans-serif; /* 使用 Raleway 字体 */
+    font-weight: 100; /* Thin 字重 */
     font-size: 3rem;
     margin: 20px 0;
 }
 
+/* 正文字体 */
 p {
+    font-family: 'ZCOOL Addict Italic', sans-serif;
     font-size: 1.2rem;
     opacity: 0.8;
 }
+
