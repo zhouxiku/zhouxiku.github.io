@@ -21,7 +21,7 @@ body {
 h1 {
     font-family: 'Microsoft YaHei', sans-serif; /* 使用微软雅黑 */
     font-size: 3rem;
-    font-weight: bold; 
+    font-weight: bold; /* 加粗 */
     margin: 20px 0;
 }
 
