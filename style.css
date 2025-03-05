@@ -1,8 +1,10 @@
+/* 引入站酷仓耳渔阳体 */
 @font-face {
-    font-family: 'ZCOOL Addict Italic'; 
+    font-family: 'ZCOOL Addict Italic';
     src: url('站酷仓耳渔阳体-W01.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 /* 全局样式 */
@@ -17,8 +19,7 @@ body {
 
 /* 标题样式 */
 h1 {
-    font-family: 'Raleway', sans-serif; /* 使用 Raleway 字体 */
-    font-weight: 100; /* Thin 字重 */
+    font-family: 'Microsoft YaHei', sans-serif; /* 使用微软雅黑 */
     font-size: 3rem;
     margin: 20px 0;
 }
@@ -29,4 +30,3 @@ p {
     font-size: 1.2rem;
     opacity: 0.8;
 }
-
