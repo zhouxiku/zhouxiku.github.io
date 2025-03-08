@@ -73,7 +73,7 @@
         /* 画廊样式 */
         .gallery {
             display: grid;
-            grid-template-columns: repeat(2, 1fr); /* 双列排版 */
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 自适应列宽，最小 300px */
             gap: 20px;
             grid-auto-rows: auto; /* 格子高度根据内容自适应 */
         }
@@ -229,7 +229,7 @@
         <p>&copy; 2025 我的美术作品集. 保留所有权利.</p>
         <p>
             <!-- 添加跳转链接 -->
-            <a href="https://x.com/liquain_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+            <a href="https://x.com/liquain_" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
             <a href="https://github.com/zhouxiku" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         </p>
     </footer>
