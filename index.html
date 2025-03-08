@@ -44,11 +44,29 @@
 
         /* 容器样式 */
         .container {
+            position: relative; /* 相对定位，用于定位标签 */
             max-width: 1200px;
             margin: 40px auto;
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
             border-radius: 12px;
+        }
+
+        /* 板块标签样式 */
+        .container .section-label {
+            position: absolute;
+            top: -15px;
+            right: 20px; /* 放在右上角 */
+            left: auto; /* 取消左侧定位 */
+            background-color: #81C0C0; 
+            color: #F3F3FA; /* 黑色文字 */
+            padding: 8px 15px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: bold;
+            z-index: 2;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* 更大阴影 */
+            border: 2px solid #fff; /* 白色边框 */
         }
 
         /* 画廊样式 */
@@ -82,20 +100,6 @@
 
         .gallery-item:hover img {
             transform: scale(1.1); /* 图片放大 */
-        }
-
-        /* 类别标签样式 */
-        .gallery-item .label {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background-color: rgba(0, 0, 0, 0.8); /* 半透明黑色背景 */
-            color: #fff;
-            padding: 5px 10px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            font-weight: bold;
-            z-index: 2; /* 确保标签在图片上方 */
         }
 
         /* 描述文字样式 */
@@ -179,31 +183,42 @@
         <p>welcome to my portfolio display page</p>
     </header>
 
+    <!-- 板块1：插图作品 -->
     <div class="container">
+        <div class="section-label">插图作品</div>
         <div class="gallery">
-            <!-- 板块1：插图作品 -->
             <div class="gallery-item">
-                <div class="label">插图作品</div>
                 <img src="images/artwork01_zipped..jpg" alt="作品1" class="gallery-image">
                 <p>space</p>
             </div>
             <div class="gallery-item">
-                <div class="label">插图作品</div>
-                <img src="images/artwork07.jpg" alt="作品7" class="gallery-image">
-                <p>sea</p>
-            </div>
-            <!-- 板块2：其他作品 -->
-            <div class="gallery-item">
-                <div class="label">其他作品</div>
                 <img src="images/artwork02_zipped.jpg" alt="作品2" class="gallery-image">
                 <p>cyberpunk</p>
             </div>
             <div class="gallery-item">
-                <div class="label">其他作品</div>
+                <img src="images/artwork07.jpg" alt="作品7" class="gallery-image">
+                <p>sea</p>
+            </div>
+        
+            <div class="gallery-item">
                 <img src="images/artwork05.jpg" alt="作品5" class="gallery-image">
                 <p>filed</p>
             </div>
-            <!-- 更多作品 -->
+        </div>
+    </div>
+
+    <!-- 板块2：其他作品 -->
+    <div class="container">
+        <div class="section-label">其他作品</div>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/artwork02_zipped.jpg" alt="作品2" class="gallery-image">
+                <p>cyberpunk</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/artwork05.jpg" alt="作品5" class="gallery-image">
+                <p>filed</p>
+            </div>
         </div>
     </div>
 
